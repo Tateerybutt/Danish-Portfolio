@@ -290,35 +290,6 @@ h6 {
   margin: 0 0 30px 0;
 }
 
-.footer .social-links {
-  margin: 0 0 30px 0;
-}
-
-.footer .social-links a {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  line-height: 1;
-  margin: 0 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-.ico {
-  max-width: 36px;
-}
-
-.footer .social-links a:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-  text-decoration: none;
-}
-
 .footer .copyright {
   padding-top: 25px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -513,6 +484,65 @@ section,
   justify-content: center;
 }
 
+.pph-icon:hover,
+.upw-icon:hover,
+.github-icon:hover,
+.fi-icon:hover,
+.fb-icon:hover,
+.x-icon:hover,
+.linkedin-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Common styles for all icons */
+.linkedin-icon,
+.pph-icon,
+.upw-icon,
+.github-icon,
+.fi-icon,
+.fb-icon,
+.x-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Specific styles for individual icons */
+.linkedin-icon {
+  background: url('../img/linkedin-icon.png') no-repeat center center;
+}
+
+.pph-icon {
+  border-radius: 40%;
+  background: url('../img/pph-icon.png') no-repeat center center;
+}
+
+.upw-icon {
+  background: url('../img/upwork-icon.png') no-repeat center center;
+}
+
+.github-icon {
+  border-radius: 50%;
+  background: url('../img/github-icon.png') no-repeat center center;
+}
+
+.fi-icon {
+  border-radius: 50%;
+  background: url('../img/fiverr-icon.png') no-repeat center center;
+}
+
+.fb-icon {
+  border-radius: 50%;
+  background: url('../img/facebook-icon.png') no-repeat center center;
+}
+
+.x-icon {
+  background: url('../img/x-icon.png') no-repeat center center;
+}
+
 .hero img {
   position: absolute;
   inset: 0;
@@ -552,11 +582,11 @@ section,
   border-bottom: 2px solid var(--accent-color);
 }
 
-.hero .social-links {
+.social-links {
   margin-top: 25px;
 }
 
-.hero .social-links a {
+.social-links a, .social-links a img{
   font-size: 20px;
   display: inline-block;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
@@ -565,7 +595,7 @@ section,
   transition: 0.3s;
 }
 
-.hero .social-links a:hover {
+.social-links a:hover {
   color: var(--accent-color);
 }
 
